@@ -1,10 +1,12 @@
 import React from "react";
 import "./App.css";
-
+import Greeter from "./components/Greeter";
 function App() {
   return (
     <div className="App">
-      <h1>React Basic Setup</h1>
+      <Greeter person={"Jil"} />
+      <Greeter person={"Jung"} />
+      <Greeter person={"Juck"} />
     </div>
   );
 }
