@@ -7,8 +7,8 @@ import { v4 as getId } from "uuid";
 import Item from "./models/item";
 function App() {
   const [items, setItems] = useState<Item[]>([]);
-  const onAddItem = (product: string) => {
-    setItems([...items, { id: getId(), product, price: 20 }]);
+  const onAddItem = (product: string, price: number) => {
+    setItems([...items, { id: getId(), product, price }]);
   };
   // const items = [
   //   {
